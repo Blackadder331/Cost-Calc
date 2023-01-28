@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: #eeeeee;
+    font-family: 'Fira Code', monospace; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; 
+}
+
+#content{
+    max-width: 70vw;
+    padding-top: 4rem;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+}
+
+td{ padding-right: 2rem;}
+
+.action {
+    outline: 1px solid white;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    transition: .5s ease-in-out;
+}
+
+.action:hover {
+    outline: 1px solid rgb(0, 0, 0);
+    background-color: #eeeeee;
+    color: black;
+    transition: .5s ease-in-out;
+}
+.photos {
+    flex-direction: row;
+    display: flex;
+    align-self: flex-start;
+    top: 0;
+    margin-top: 0;
+}
+.shop-photo {
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 1 / 1;
+    width: 20vw;
+    top: 0;
+    margin: 0;
+}
+
+#one {
+    background-image: url(./images/1.png);
+}
+#two {
+    background-image: url(./images/2.png);
+}
+#three{
+    background-image: url(./images/3.png);
+}
+#four {
+    background-image: url(./images/4.png);
+}
+#five {
+    background-image: url(./images/5.png);
+}
+
+@media only screen and (max-width: 600px) {
+    .shop-photo {
+        width: 50vw;
+    }
+  }
